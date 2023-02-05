@@ -1,0 +1,264 @@
+/*Defult style*/
+body {
+    background-color: #FFD700;
+    padding: 10px;
+    margin: 5px;
+}
+
+/*Header h1 style*/
+header h1 {
+    background: rgb(131, 58, 180);
+    text-align: center;
+    margin-top: -8px;
+    color: #ffff;
+}
+
+/*Rules style*/
+.rules {
+    background-color: rgb(131, 58, 180);
+    color: white;
+    margin-top: -18px;
+    margin-bottom: 5px;
+    padding: 1px;
+}
+
+/*Result style*/
+.result {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+/*display score style*/
+.score {
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.game {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*Game Frame style*/
+.frame {
+    background: rgb(131, 58, 180);
+    height: 500px;
+    width: 100%;
+    animation: 1s;
+    border: 2px solid red;
+}
+
+/*Circle shapes and animation style*/
+.circle {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background-color: red;
+    margin-top: 95px;
+    position: relative;
+    animation: circle-move 25s 1 alternate linear forwards,
+        circle-color 25s 1 alternate linear forwards;
+    animation-play-state: paused;
+}
+
+/*Animation-play-state for circle style*/
+.circle.start {
+    animation-play-state: running;
+}
+
+/*Animation paused state for circle*/
+.circle.start.stop {
+    animation-play-state: paused;
+}
+
+/*KeyFrame animation for circle move*/
+@keyframes circle-move {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    50% {
+        top: 0;
+        left: calc(50% - 50px);
+    }
+
+    100% {
+        top: 0;
+        left: calc(100% - 100px);
+
+    }
+}
+
+.start1check {
+    pointer-events: none;
+}
+
+/*Keyframe animation for cirlce color*/
+@keyframes circle-color {
+    0% {
+        background-color: darkgreen;
+    }
+
+    25% {
+        background-color: green;
+    }
+
+    50% {
+        background-color: lightgreen;
+
+    }
+
+    75% {
+        background-color: #ffcccb;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
+/*rectangle animation shapes style*/
+.recangle {
+    width: 62px;
+    height: 62px;
+    background-color: red;
+    margin-top: 93px;
+    position: relative;
+    animation: recangle-move 10s 1 alternate linear forwards,
+        recangle-color 10s 1 alternate linear forwards;
+    animation-play-state: paused;
+}
+
+/*animation-play-state for rectangle*/
+.recangle.start {
+    animation-play-state: running;
+}
+
+/*Animation paused state style*/
+.recangle.start.stop {
+    animation-play-state: paused;
+}
+
+/*Keyframe animation to move rectangle*/
+@keyframes recangle-move {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    50% {
+        top: 0;
+        left: calc(50% - 50px);
+    }
+
+    100% {
+        top: 0;
+        left: calc(100% - 100px);
+    }
+
+}
+
+/*Keyframe animation for rectangle color*/
+@keyframes recangle-color {
+    0% {
+        background-color: darkgreen;
+    }
+
+    25% {
+        background-color: green;
+    }
+
+    50% {
+        background-color: lightgreen;
+
+    }
+
+    75% {
+        background-color: #ffcccb;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
+/*Saw style*/
+.saw1 {
+    width: 0;
+    height: 0;
+    float: right;
+    margin-top: -40px;
+    border-top: 50px solid transparent;
+    border-right: 85px solid #FFD700;
+    border-bottom: 50px solid transparent;
+}
+
+.saw2 {
+    width: 0;
+    height: 0;
+    float: right;
+    margin-right: -85px;
+    margin-top: -146px;
+    border-top: 50px solid transparent;
+    border-right: 100px solid #FFD700;
+    border-bottom: 49px solid transparent;
+}
+
+.saw3 {
+    width: 0;
+    height: 0;
+    float: right;
+    margin-top: -252px;
+    margin-right: -85px;
+    border-top: 50px solid transparent;
+    border-right: 136px solid #FFD700;
+    border-bottom: 50px solid transparent;
+}
+
+.saw4 {
+    width: 0;
+    height: 0;
+    float: right;
+    margin-top: -362px;
+    margin-right: -85px;
+    border-top: 50px solid transparent;
+    border-right: 105px solid #FFD700;
+    border-bottom: 50px solid transparent;
+}
+
+.saw5 {
+    width: 0;
+    height: 0;
+    float: right;
+    margin-top: -469px;
+    margin-right: -85px;
+    border-top: 50px solid transparent;
+    border-right: 76px solid #FFD700;
+    border-bottom: 50px solid transparent;
+}
+
+/*Score style*/
+.score.block {
+    display: block;
+}
+
+/*Input style*/
+input {
+
+    padding: 5px;
+    background-color: red;
+    border-radius: 5%;
+    color: black;
+    font-size: x-large;
+    font-weight: 500;
+
+}
+
+.game {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
